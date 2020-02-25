@@ -15,6 +15,12 @@ app.get('/contact', (req, res) => { //fat arrow means function
 
 });
 
+app.get('/extras', (req, res) => { //fat arrow means function
+    res.send('This is the extra page'); //send this info to /
+
+});
+
+
 //listening to request for port no 3000 vv
 app.listen(3000, () => {        //fat arrow for callback
     console.log('Server listening on port 3000');
